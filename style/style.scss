@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+    font-style: normal;
+    font-weight: 400;
+}
+$sans: 'PT Sans';
+$exo: 'Exo 2';
+.container{
+    max-width: 1240px;
+    margin: auto;
+    padding: 20px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 109px;
+    margin-bottom: 67px;
+    .hero__content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .hero__title{
+            font-family: $exo;
+            font-size: 52px;
+            line-height: 125%;
+            color: #363738;
+
+        }
+        .hero__text{
+            font-family: $sans;
+            font-size: 16px;
+            line-height: 150%;
+            color: #6B6B6C;
+            width: 525px;
+        }
+        .hero__caption{
+            width: 104px;
+            font-family: $sans;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #363738;
+            border-bottom: 3px solid #FFCE50;
+            cursor: pointer;
+        }
+    }
+}
+.hero__bottom{
+    width: 1240px;
+    height: 341px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 40px 0 56px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 333px);
+    gap: 64px;
+    .hero__btm-box{
+        border-right: 1px solid #D7D7DD;
+        .hero__btm__title{
+            font-family: $exo;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 135%;
+            color: #363738;
+            width: 228px;
+            margin: 24px 0 16px;
+        }
+        .hero__btm__subtitle{
+            width: 225px;
+            font-family: $sans;
+            font-size: 16px;
+            line-height: 150%;
+            color: #6B6B6C;
+        }
+    }
+    .hero__btm-box:last-child{
+        border: none;
+    }
+}
