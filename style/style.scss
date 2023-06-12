@@ -12,6 +12,8 @@
 }
 $sans: 'PT Sans';
 $exo: 'Exo 2';
+$main-color: #363738;
+$p-color: #6B6B6C;
 .container{
     max-width: 1240px;
     margin: auto;
@@ -32,14 +34,14 @@ $exo: 'Exo 2';
             font-family: $exo;
             font-size: 52px;
             line-height: 125%;
-            color: #363738;
+            color: $main-color;
 
         }
         .hero__text{
             font-family: $sans;
             font-size: 16px;
             line-height: 150%;
-            color: #6B6B6C;
+            color: $p-color;
             width: 525px;
         }
         .hero__caption{
@@ -48,7 +50,7 @@ $exo: 'Exo 2';
             font-weight: 700;
             font-size: 16px;
             line-height: 150%;
-            color: #363738;
+            color: $main-color;
             border-bottom: 3px solid #FFCE50;
             cursor: pointer;
         }
@@ -64,6 +66,7 @@ $exo: 'Exo 2';
     display: grid;
     grid-template-columns: repeat(3, 333px);
     gap: 64px;
+    margin-bottom: 100px;
     .hero__btm-box{
         border-right: 1px solid #D7D7DD;
         .hero__btm__title{
@@ -71,7 +74,7 @@ $exo: 'Exo 2';
             font-weight: 600;
             font-size: 20px;
             line-height: 135%;
-            color: #363738;
+            color: $main-color;
             width: 228px;
             margin: 24px 0 16px;
         }
@@ -80,10 +83,109 @@ $exo: 'Exo 2';
             font-family: $sans;
             font-size: 16px;
             line-height: 150%;
-            color: #6B6B6C;
+            color: $p-color;
         }
     }
     .hero__btm-box:last-child{
         border: none;
+    }
+}
+.checkbox{
+    display: flex;
+    gap: 140px;
+    margin-bottom: 100px;
+    .checkbox__block{
+        display: flex;
+        flex-direction: column;
+        .checkbox__block__title{
+            font-family: $exo;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 125%;
+            color: $main-color;
+        }
+        .checkbox__block__text{
+            font-family: $sans;
+            font-size: 16px;
+            line-height: 150%; 
+            color: $p-color;
+            width: 667px;
+            margin: 32px 0 40px;
+        }
+        .checkbox__block__box-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .checkbox__block__box{
+                width: 687px;
+                height: 176px;
+                box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+                border-radius: 10px; 
+                display: flex;
+                gap: 32px;
+                padding: 40px 0 48px 40px;
+                .check{
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid #CBCBCD;
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                .check:hover{
+                    background: #0B7572;
+                }
+                .check__content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    .check__title{
+                        font-family: $exo;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 150%;
+                        color: $main-color;
+                    }
+                    .check__subtitle{
+                        font-family: $sans;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: $p-color;
+                        width: 466px;
+                    }
+                }
+            }
+        }
+    }
+    .checkbox__block__box:active{
+        border: 1px solid #0B7572;
+    }
+    .checkbox__voted{
+        margin-top: 162px;
+        .voted__title{
+            font-family: $exo;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 150%;
+            color: $main-color;
+        }
+        .voted__num{
+            font-family: $exo;
+            font-weight: 600;
+            font-size: 54px;
+            line-height: 150%;
+            letter-spacing: 0.3em;
+            color: $main-color;
+            padding-bottom: 36px;
+            border-bottom: 3px solid #FFCE50;
+            .voted__num__text{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: $p-color;
+                letter-spacing: normal;
+                margin-left: -35px;
+            }
+        }
     }
 }
