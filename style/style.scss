@@ -382,6 +382,7 @@ $p-color: #6B6B6C;
     }
 }
 .trust{
+    margin-bottom: 130px;
     .trust__title{
         font-family: $exo;
         font-weight: 600;
@@ -427,14 +428,76 @@ $p-color: #6B6B6C;
             }
         }
         .trust__box:nth-child(5){
+            border-left: none;
             .trust__box__title{
                 margin-top: 70px;
-                border-left: none;
             }
         }
         .trust__box:last-child{
             .trust__box__title{
                 margin-top: 75px;
+            }
+        }
+    }
+}
+.employees{
+    margin-bottom: 130px;
+    .employees__title{
+        font-family: $exo;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 125%;
+        color: $main-color;
+        margin-bottom: 72px;
+    }
+    .employee__card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 605px);
+        grid-template-rows: repeat(3, 210px);
+        gap: 24px 30px;
+    }
+    .employee__card{
+        display: flex;
+        gap: 32px;
+        width: 605px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        .card-side{
+            width: 51px;
+            height: 210px;
+            border-radius: 10px 0 0 10px;
+            background: #0B7572;
+        }
+        .employee__card__content{
+            display: flex;
+            gap: 40px;
+            padding: 32px 0 40px;
+            .employee__card__items{
+                .line{
+                    width: 86px;
+                    border-bottom: 3px solid #FFCE50;
+                    margin-bottom: 32px;
+                }
+                h4{
+                    font-family: $exo;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $main-color;
+                }
+                p{
+                    font-family: $sans;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: $p-color;
+                    margin-top: 12px;
+                    margin-bottom: 16px;
+                }
+                .social__links{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                }
             }
         }
     }
