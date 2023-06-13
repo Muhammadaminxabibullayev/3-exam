@@ -10,6 +10,12 @@
     font-style: normal;
     font-weight: 400;
 }
+h1, h2, h3, h4{
+    font-family: $exo;
+}
+p{
+    font-family: $sans;
+}
 $sans: 'PT Sans';
 $exo: 'Exo 2';
 $main-color: #363738;
@@ -569,10 +575,45 @@ $p-color: #6B6B6C;
             border-bottom: 1px solid #E9EAF2;
         }
         tr:last-child{
-            border: none;
+            th{
+                border: none;
+            }
             td{
                 width: 433px;
+                border: none;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 690px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        .hero__content{
+            text-align: center;
+        }
+        .hero__img{
+            width: 690px;
+            height: 314px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+    .hero__bottom{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: none;
+        .hero__btm-box{
+            width: 690px;
+            height: 164px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+            border-radius: 20px;
+            border: none;
         }
     }
 }
