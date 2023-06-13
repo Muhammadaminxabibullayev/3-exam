@@ -189,3 +189,22 @@ $p-color: #6B6B6C;
         }
     }
 }
+.why-us{
+    width: 1240px;
+    height: 453px;
+    background-image: url(/images/half__truck.png);
+    background-position: right;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 50% 100%);
+    .why-us__banner{
+        .banner__before{
+            width: 769px;
+            height: 453px;
+            background-color: #0B7572;
+            clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+        }  
+    } 
+    .why-us__bottom{
+        margin-top: 72px;
+    } 
+}
+
